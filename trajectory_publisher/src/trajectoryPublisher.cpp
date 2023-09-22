@@ -67,7 +67,7 @@ trajectoryPublisher::trajectoryPublisher(const ros::NodeHandle& nh, const ros::N
   nh_private_.param<double>("initpos_z", init_pos_z_, 1.0);
   nh_private_.param<double>("updaterate", controlUpdate_dt_, 0.01);
   nh_private_.param<double>("horizon", primitive_duration_, 1.0);
-  nh_private_.param<double>("maxjerk", max_jerk_, 10.0);
+  nh_private_.param<double>("maxjerk", max_jerk_, 5.0);
   nh_private_.param<double>("shape_omega", shape_omega_, 1.5);
   nh_private_.param<int>("trajectory_type", trajectory_type_, 0);
   nh_private_.param<int>("number_of_primitives", num_primitives_, 7);
